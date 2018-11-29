@@ -1,0 +1,38 @@
+guest = ['wenbo', 'nick', 'huanglei', 'longyu', 'liyang']
+print(guest[3])
+message = "I'd like to invite "+guest[2]+" as my special guest."
+print(message.title())
+print(guest[2]+" can't reach on time.")
+absence = [guest[2]]
+print(absence[0].title())
+guest.remove(absence[0])
+guest[2] = 'xialijuan'
+print(guest)
+print("I'd like to invite "+guest[2]+" as my special guest.")
+guest.insert(0, 'zenghaijun')
+guest.insert(2, 'lihongzhi')
+guest.append('qianguirong')
+print(guest)
+i = len(guest)-1
+sorry = []
+while i >= 2:
+    sorry.append(guest.pop(i))
+    print("I'm sorry, " + sorry[-1])
+    i -= 1
+print(sorry)
+del guest[1]
+del guest[0]
+print(guest)
+sorry.reverse()
+print(sorry)
+print(sorted(sorry, reverse=True))
+print(sorry)
+print('\n')
+#
+for guys in sorry:
+    print(guys)
+
+for value in range(5):
+    print(value)
+
+
